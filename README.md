@@ -1,1 +1,43 @@
-<html><head></head><body><div class="line-gutter-backdrop"></div><table><tbody><tr><td class="line-number" value="1"></td><td class="line-content">## Synopsis</td></tr><tr><td class="line-number" value="2"></td><td class="line-content"><br></td></tr><tr><td class="line-number" value="3"></td><td class="line-content">At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)</td></tr><tr><td class="line-number" value="4"></td><td class="line-content"><br></td></tr><tr><td class="line-number" value="5"></td><td class="line-content">## Code Example</td></tr><tr><td class="line-number" value="6"></td><td class="line-content"><br></td></tr><tr><td class="line-number" value="7"></td><td class="line-content">Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.</td></tr><tr><td class="line-number" value="8"></td><td class="line-content"><br></td></tr><tr><td class="line-number" value="9"></td><td class="line-content">## Motivation</td></tr><tr><td class="line-number" value="10"></td><td class="line-content"><br></td></tr><tr><td class="line-number" value="11"></td><td class="line-content">A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.</td></tr><tr><td class="line-number" value="12"></td><td class="line-content"><br></td></tr><tr><td class="line-number" value="13"></td><td class="line-content">## Installation</td></tr><tr><td class="line-number" value="14"></td><td class="line-content"><br></td></tr><tr><td class="line-number" value="15"></td><td class="line-content">Provide code examples and explanations of how to get the project.</td></tr><tr><td class="line-number" value="16"></td><td class="line-content"><br></td></tr><tr><td class="line-number" value="17"></td><td class="line-content">## API Reference</td></tr><tr><td class="line-number" value="18"></td><td class="line-content"><br></td></tr><tr><td class="line-number" value="19"></td><td class="line-content">Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.</td></tr><tr><td class="line-number" value="20"></td><td class="line-content"><br></td></tr><tr><td class="line-number" value="21"></td><td class="line-content">## Tests</td></tr><tr><td class="line-number" value="22"></td><td class="line-content"><br></td></tr><tr><td class="line-number" value="23"></td><td class="line-content">Describe and show how to run the tests with code examples.</td></tr><tr><td class="line-number" value="24"></td><td class="line-content"><br></td></tr><tr><td class="line-number" value="25"></td><td class="line-content">## Contributors</td></tr><tr><td class="line-number" value="26"></td><td class="line-content"><br></td></tr><tr><td class="line-number" value="27"></td><td class="line-content">Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.</td></tr><tr><td class="line-number" value="28"></td><td class="line-content"><br></td></tr><tr><td class="line-number" value="29"></td><td class="line-content">## License</td></tr><tr><td class="line-number" value="30"></td><td class="line-content"><br></td></tr><tr><td class="line-number" value="31"></td><td class="line-content">A short snippet describing the license (MIT, Apache, etc.)</td></tr><tr><td class="line-number" value="32"></td><td class="line-content"><span class="html-end-of-file"></span></td></tr></tbody></table></body></html>
+## Installation
+
+### Build System Dependencies (NPM)
+This starter kit utilizes a gulp based build system.  To install this you will
+need to install node dependencies by executing the following command
+
+```
+npm install
+```
+
+Don't have npm?  NPM comes with node when install it with brew.  See http://brew.sh
+to install brew if you need to.  Once brew is installed install node by running
+this command:
+
+```
+brew install node
+```
+
+## Building
+
+To run the build process just execute the following command
+
+```
+gulp
+```
+
+
+
+Watch for development
+Watches css / js / page file updates
+
+```
+gulp watch
+```
+
+Build for CrownPeak deployment
+
+``` text
+gulp build
+```
+
+### CSS
+Sass with autoprefixer
