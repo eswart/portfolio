@@ -6,7 +6,7 @@
   "scripts": {},
   "author": "Evan Swart",
   "license": "ISC",
-  "description": "Web Boilerplate",
+  "description": "Portfolio Site",
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
