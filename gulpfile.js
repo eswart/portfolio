@@ -113,7 +113,7 @@ gulp.task('html', function() {
         }))
         .pipe(nunjucks({searchPaths: [paths.app.root]}))
         .pipe(plumber.stop())
-        .pipe(htmlmin({collapseWhitespace: true, minifyJS: true}))
+        .pipe(htmlmin({collapseWhitespace: false, minifyJS: true}))
         // Rename to .html extension
         .pipe(rename({extname: extension.html}))
         // Prettify to re-indent and remove empty lines

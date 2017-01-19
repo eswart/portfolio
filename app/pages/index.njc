@@ -1,6 +1,6 @@
 {% extends "layouts/master.njc" %}
 
-{% set css_files = [{ path: "test1.css", id: 1 }, { path: "test2.css", id: 2}] %}
+{# {% set css_files = [{ path: "test1.css", id: 1 }, { path: "test2.css", id: 2}] %} #}
 
 {% set page_title = 'Title goes here' %}
 {% set page_description = 'Meta descritpion goes here' %}
@@ -10,4 +10,4 @@
 <p>Content 3</p>
 {% endblock content_block %}
 
-{% set js_files = [{ path: "test1.js", id: 1 }, { path: "test2.js", id: 2}] %}
+{# {% set js_files = [{ path: "test1.js", id: 1 }, { path: "test2.js", id: 2}] %} #}

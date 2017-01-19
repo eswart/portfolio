@@ -1,0 +1,47 @@
+/**
+ * This file should only include @include declarations
+ *
+ * It is organized into a specific order that is worth adhereing to
+ *
+ * 1. Variables are defined first so everything can use them
+ * 2. Third party utils are included next so that can also be leveraged
+ * 3. Custom utils come after that, add anything that will help you be more consistent
+ *    and help you from repeting yourself
+ * 4. Normalize and global styles come next to form a base layer of styling
+ * 5. Components come next.  If you are going to be reusing a style for a button add those
+ *    styles to a component file
+ * 6. Lastly page files.  These are included last so they can override things on a per
+ *    page basis.
+ *
+ * Other Styling Notes:
+ * - It is not a strict rule, but try and adhere to the Block Element Modifier (BEM) naming
+ *   convention. See: https://en.bem.info/method/key-concepts/
+ *
+ * - Along the same lines you should try and avoid defining deeply nested styles that are
+ *   built on a lot of decendent selectors.  Not only are they more expensive for the browser
+ *   but they make your code difficult to debug and change.  Try and limit yourself to one level
+ *   of inheritance.
+ */
+
+// Variables
+@import 'variables';
+@import 'colors';
+
+// Third Party Utils
+	//@import "mq-config";
+@import "node_modules/sass-mq/mq";
+@import "custom";
+@import "node_modules/bootstrap/scss/bootstrap-grid";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// Global
+	//@import 'fonts';
+@import "base_normalize";
+@import 'global';
+
+// Utils
+	//@import "_utils/grid";
+
+// Components
+
+// Pages
