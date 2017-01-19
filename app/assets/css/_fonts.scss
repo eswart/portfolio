@@ -1,0 +1,340 @@
+/*
+ * Fonts that are used throughout the site.  All the font varieties are included here.
+ * Uncomment the ones you need and make font-family variables at the top so they can be
+ * used easily.
+ */
+
+$fontFamilyLight:              "AvenirNextLTPro-Light", Helvetica, Arial, sans-serif;
+$fontFamilyRegular:            "AvenirNextLTPro-Regular", Helvetica, Arial, sans-serif;
+$fontFamilyDemi:               "AvenirNextLTPro-Demi", Helvetica, Arial, sans-serif;
+$fontFamilyBold:               "AvenirNextLTPro-Bold", Helvetica, Arial, sans-serif;
+$fontFamilyRegularCondensed:   "AvenirNextLTPro-LightCn", Helvetica, Arial, sans-serif;
+$fontFamilyDemiCondensed:      "AvenirNextLTPro-DemiCn", Helvetica, Arial, sans-serif;
+
+
+
+
+// // ******* REGULAR *******
+
+// // Ultra Light
+// @font-face {
+//     font-family: AvenirNextLTPro-UltLt;
+//     font-style: normal;
+//     font-variant: normal;
+//     font-weight: 400;
+//     src: url(/assets/fonts/2B75C1_3_0.eot);
+//     src: url(/assets/fonts/2B75C1_3_0.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/2B75C1_3_0.woff) format("woff"),url(/assets/fonts/2B75C1_3_0.ttf) format("truetype")
+// }
+
+// // Ultra Light -- italic
+// @font-face {
+//     font-family: AvenirNextLTPro-UltLtIt;
+//     font-style: normal;
+//     font-variant: normal;
+//     font-weight: 400;
+//     src: url(/assets/fonts/2B75C1_0_0.eot);
+//     src: url(/assets/fonts/2B75C1_0_0.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/2B75C1_0_0.woff) format("woff"),url(/assets/fonts/2B75C1_0_0.ttf) format("truetype")
+// }
+
+// // Thin
+// @font-face {
+//     font-family: AvenirNextLTPro-Thin;
+//     font-style: normal;
+//     font-variant: normal;
+//     font-weight: 400;
+//     src: url(/assets/fonts/2B75C1_5_0.eot);
+//     src: url(/assets/fonts/2B75C1_5_0.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/2B75C1_5_0.woff) format("woff"),url(/assets/fonts/2B75C1_5_0.ttf) format("truetype")
+// }
+
+// // Thin -- italic
+// @font-face {
+//     font-family: AvenirNextLTPro-ThinIt;
+//     font-style: normal;
+//     font-variant: normal;
+//     font-weight: 400;
+//     src: url(/assets/fonts/2B75C1_1F_0.eot);
+//     src: url(/assets/fonts/2B75C1_1F_0.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/2B75C1_1F_0.woff) format("woff"),url(/assets/fonts/2B75C1_1F_0.ttf) format("truetype")
+// }
+
+// Light
+@font-face {
+    font-family: AvenirNextLTPro-Light;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    src: url(/assets/fonts/2B75C1_C_0.eot);
+    src: url(/assets/fonts/2B75C1_C_0.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/2B75C1_C_0.woff) format("woff"),url(/assets/fonts/2B75C1_C_0.ttf) format("truetype")
+}
+
+// // Light -- italic
+// @font-face {
+//     font-family: AvenirNextLTPro-LightIt;
+//     font-style: normal;
+//     font-variant: normal;
+//     font-weight: 400;
+//     src: url(/assets/fonts/2B75C1_9_0.eot);
+//     src: url(/assets/fonts/2B75C1_9_0.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/2B75C1_9_0.woff) format("woff"),url(/assets/fonts/2B75C1_9_0.ttf) format("truetype")
+// }
+
+// Regular
+@font-face {
+    font-family: "AvenirNextLTPro-Regular";
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+
+    src: url(/assets/fonts/2B75C1_4_0.eot);
+    src: url(/assets/fonts/2B75C1_4_0.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/2B75C1_4_0.woff) format("woff"),url(/assets/fonts/2B75C1_4_0.ttf) format("truetype")
+}
+
+// // Regular Italic
+@font-face {
+    font-family: AvenirNextLTPro-It;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    src: url(/assets/fonts/2B75C1_15_0.eot);
+    src: url(/assets/fonts/2B75C1_15_0.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/2B75C1_15_0.woff) format("woff"),url(/assets/fonts/2B75C1_15_0.ttf) format("truetype")
+}
+
+// Bold
+@font-face {
+    font-family: "AvenirNextLTPro-Bold";
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    src: url(/assets/fonts/2B75C1_12_0.eot);
+    src: url(/assets/fonts/2B75C1_12_0.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/2B75C1_12_0.woff) format("woff"),url(/assets/fonts/2B75C1_12_0.ttf) format("truetype")
+}
+
+// // Bold -- italic
+// @font-face {
+//     font-family: AvenirNextLTPro-BoldIt;
+//     font-style: normal;
+//     font-variant: normal;
+//     font-weight: 400;
+//     src: url(/assets/fonts/2B75C1_13_0.eot);
+//     src: url(/assets/fonts/2B75C1_13_0.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/2B75C1_13_0.woff) format("woff"),url(/assets/fonts/2B75C1_13_0.ttf) format("truetype")
+// }
+
+// // Medium
+// @font-face {
+//     font-family: AvenirNextLTPro-Medium;
+//     font-style: normal;
+//     font-variant: normal;
+//     font-weight: 400;
+//     src: url(/assets/fonts/2B75C1_1E_0.eot);
+//     src: url(/assets/fonts/2B75C1_1E_0.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/2B75C1_1E_0.woff) format("woff"),url(/assets/fonts/2B75C1_1E_0.ttf) format("truetype")
+// }
+
+// // Medium -- italic
+// @font-face {
+//     font-family: AvenirNextLTPro-MediumIt;
+//     font-style: normal;
+//     font-variant: normal;
+//     font-weight: 400;
+//     src: url(/assets/fonts/2B75C1_1D_0.eot);
+//     src: url(/assets/fonts/2B75C1_1D_0.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/2B75C1_1D_0.woff) format("woff"),url(/assets/fonts/2B75C1_1D_0.ttf) format("truetype")
+// }
+
+// Demi
+@font-face {
+    font-family: AvenirNextLTPro-Demi;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    src: url(/assets/fonts/2B75C1_1C_0.eot);
+    src: url(/assets/fonts/2B75C1_1C_0.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/2B75C1_1C_0.woff) format("woff"),url(/assets/fonts/2B75C1_1C_0.ttf) format("truetype")
+}
+
+// // Demi -- italic
+// @font-face {
+//     font-family: AvenirNextLTPro-DemiIt;
+//     font-style: normal;
+//     font-variant: normal;
+//     font-weight: 400;
+//     src: url(/assets/fonts/2B75C1_7_0.eot);
+//     src: url(/assets/fonts/2B75C1_7_0.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/2B75C1_7_0.woff) format("woff"),url(/assets/fonts/2B75C1_7_0.ttf) format("truetype")
+// }
+
+// // Heavy
+// @font-face {
+//     font-family: AvenirNextLTPro-Heavy;
+//     font-style: normal;
+//     font-variant: normal;
+//     font-weight: 400;
+//     src: url(/assets/fonts/2B75C1_1_0.eot);
+//     src: url(/assets/fonts/2B75C1_1_0.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/2B75C1_1_0.woff) format("woff"),url(/assets/fonts/2B75C1_1_0.ttf) format("truetype")
+// }
+
+// // Heavy -- italic
+// @font-face {
+//     font-family: AvenirNextLTPro-HeavyIt;
+//     font-style: normal;
+//     font-variant: normal;
+//     font-weight: 400;
+//     src: url(/assets/fonts/2B75C1_2_0.eot);
+//     src: url(/assets/fonts/2B75C1_2_0.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/2B75C1_2_0.woff) format("woff"),url(/assets/fonts/2B75C1_2_0.ttf) format("truetype")
+// }
+
+
+
+
+// // ******* CONDENSED *******
+
+// // Ultra Light Condensed
+// @font-face {
+//     font-family: AvenirNextLTPro-UltLtCn;
+//     src: url(/assets/fonts/2B75C1_A_0.eot);
+//     src: url(/assets/fonts/2B75C1_A_0.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/2B75C1_A_0.woff) format("woff"),url(/assets/fonts/2B75C1_A_0.ttf) format("truetype")
+// }
+
+// // Ultra Light Condensed -- italic
+// @font-face {
+//     font-family: AvenirNextLTPro-UltLtCnIt;
+//     font-style: normal;
+//     font-variant: normal;
+//     font-weight: 400;
+//     src: url(/assets/fonts/2B75C1_8_0.eot);
+//     src: url(/assets/fonts/2B75C1_8_0.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/2B75C1_8_0.woff) format("woff"),url(/assets/fonts/2B75C1_8_0.ttf) format("truetype")
+// }
+
+// // Light Condensed
+@font-face {
+    font-family: AvenirNextLTPro-LightCn;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    src: url(/assets/fonts/2B75C1_F_0.eot);
+    src: url(/assets/fonts/2B75C1_F_0.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/2B75C1_F_0.woff) format("woff"),url(/assets/fonts/2B75C1_F_0.ttf) format("truetype")
+}
+
+// // Light Condensed -- italic
+// @font-face {
+//     font-family: AvenirNextLTPro-LightCnIt;
+//     font-style: normal;
+//     font-variant: normal;
+//     font-weight: 400;
+//     src: url(/assets/fonts/2B75C1_D_0.eot);
+//     src: url(/assets/fonts/2B75C1_D_0.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/2B75C1_D_0.woff) format("woff"),url(/assets/fonts/2B75C1_D_0.ttf) format("truetype")
+// }
+
+// // Thin Condensed
+// @font-face {
+//     font-family: AvenirNextLTPro-ThinCn;
+//     font-style: normal;
+//     font-variant: normal;
+//     font-weight: 400;
+//     src: url(/assets/fonts/2B75C1_6_0.eot);
+//     src: url(/assets/fonts/2B75C1_6_0.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/2B75C1_6_0.woff) format("woff"),url(/assets/fonts/2B75C1_6_0.ttf) format("truetype")
+// }
+
+// // Thin Condensed -- italic
+// @font-face {
+//     font-family: AvenirNextLTPro-ThinCnIt;
+//     font-style: normal;
+//     font-variant: normal;
+//     font-weight: 400;
+//     src: url(/assets/fonts/2B75C1_B_0.eot);
+//     src: url(/assets/fonts/2B75C1_B_0.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/2B75C1_B_0.woff) format("woff"),url(/assets/fonts/2B75C1_B_0.ttf) format("truetype")
+// }
+
+// // Regular Condensed
+// @font-face {
+//     font-family: AvenirNextLTPro-Cn;
+//     font-style: normal;
+//     font-variant: normal;
+//     font-weight: 400;
+//     src: url(/assets/fonts/2B75C1_10_0.eot);
+//     src: url(/assets/fonts/2B75C1_10_0.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/2B75C1_10_0.woff) format("woff"),url(/assets/fonts/2B75C1_10_0.ttf) format("truetype")
+// }
+
+// // Regular Condensed -- italic
+// @font-face {
+//     font-family: AvenirNextLTPro-CnIt;
+//     font-style: normal;
+//     font-variant: normal;
+//     font-weight: 400;
+//     src: url(/assets/fonts/2B75C1_11_0.eot);
+//     src: url(/assets/fonts/2B75C1_11_0.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/2B75C1_11_0.woff) format("woff"),url(/assets/fonts/2B75C1_11_0.ttf) format("truetype")
+// }
+
+// // Bold Condensed
+// @font-face {
+//     font-family: AvenirNextLTPro-BoldCn;
+//     font-style: normal;
+//     font-variant: normal;
+//     font-weight: 400;
+//     src: url(/assets/fonts/2B75C1_16_0.eot);
+//     src: url(/assets/fonts/2B75C1_16_0.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/2B75C1_16_0.woff) format("woff"),url(/assets/fonts/2B75C1_16_0.ttf) format("truetype")
+// }
+
+// // Bold Condensed -- italic
+// @font-face {
+//     font-family: AvenirNextLTPro-BoldCnIt;
+//     font-style: normal;
+//     font-variant: normal;
+//     font-weight: 400;
+//     src: url(/assets/fonts/2B75C1_1A_0.eot);
+//     src: url(/assets/fonts/2B75C1_1A_0.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/2B75C1_1A_0.woff) format("woff"),url(/assets/fonts/2B75C1_1A_0.ttf) format("truetype")
+// }
+
+// // Medium Condensed
+// @font-face {
+//     font-family: AvenirNextLTPro-MediumCn;
+//     font-style: normal;
+//     font-variant: normal;
+//     font-weight: 400;
+//     src: url(/assets/fonts/2B75C1_19_0.eot);
+//     src: url(/assets/fonts/2B75C1_19_0.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/2B75C1_19_0.woff) format("woff"),url(/assets/fonts/2B75C1_19_0.ttf) format("truetype")
+// }
+
+// // Medium Condensed -- italic
+// @font-face {
+//     font-family: AvenirNextLTPro-MediumCnIt;
+//     font-style: normal;
+//     font-variant: normal;
+//     font-weight: 400;
+//     src: url(/assets/fonts/2B75C1_17_0.eot);
+//     src: url(/assets/fonts/2B75C1_17_0.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/2B75C1_17_0.woff) format("woff"),url(/assets/fonts/2B75C1_17_0.ttf) format("truetype")
+// }
+
+// Demi Condensed
+@font-face {
+    font-family: AvenirNextLTPro-DemiCn;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    src: url(/assets/fonts/2B75C1_18_0.eot);
+    src: url(/assets/fonts/2B75C1_18_0.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/2B75C1_18_0.woff) format("woff"),url(/assets/fonts/2B75C1_18_0.ttf) format("truetype")
+}
+
+// // Demi Condensed -- italic
+// @font-face {
+//     font-family: AvenirNextLTPro-DemiCnIt;
+//     font-style: normal;
+//     font-variant: normal;
+//     font-weight: 400;
+//     src: url(/assets/fonts/2B75C1_1B_0.eot);
+//     src: url(/assets/fonts/2B75C1_1B_0.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/2B75C1_1B_0.woff) format("woff"),url(/assets/fonts/2B75C1_1B_0.ttf) format("truetype")
+// }
+
+// // Heavy Condensed
+// @font-face {
+//     font-family: AvenirNextLTPro-HeavyCn;
+//     font-style: normal;
+//     font-variant: normal;
+//     font-weight: 400;
+//     src: url(/assets/fonts/2B75C1_E_0.eot);
+//     src: url(/assets/fonts/2B75C1_E_0.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/2B75C1_E_0.woff) format("woff"),url(/assets/fonts/2B75C1_E_0.ttf) format("truetype")
+// }
+
+// // Heavy Condensed -- italic
+// @font-face {
+//     font-family: AvenirNextLTPro-HeavyCnIt;
+//     font-style: normal;
+//     font-variant: normal;
+//     font-weight: 400;
+//     src: url(/assets/fonts/2B75C1_14_0.eot);
+//     src: url(/assets/fonts/2B75C1_14_0.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/2B75C1_14_0.woff) format("woff"),url(/assets/fonts/2B75C1_14_0.ttf) format("truetype")
+// }

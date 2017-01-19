@@ -1,0 +1,19 @@
+/**
+ * COLORS
+ *
+ * This is a color list that makes it easy to share named colors that can be
+ * used thoughout the site.  You use it like this:
+ *
+ *   background: color(white);
+ *
+ * This format helps enforce consistency in colors throughout your project.
+ * All colors used throughout your project should be defined here.
+ */
+
+$color: (
+    white:        #FFFFFF,
+);
+
+@function color($request) {
+    @return map-get($color, $request);
+}
