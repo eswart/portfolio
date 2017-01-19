@@ -1,0 +1,51 @@
+{#
+
+    Savings card eligibility questions.  These appear twice so broke it out into a partial
+    so we don't have to repeat ourselves.
+
+#}
+
+{% macro savingsEligibiltyQuestions(formIdentifier = "") %}
+            <div class="grid">
+                <div class="col-7-10 col-mobile-1-1">
+                    Are you 18 or older and currently living in the United States or Puerto Rico?
+                    <p class="form__error" data-error-for="requirement-age">
+                        We're sorry. You must be 18 or older and a resident of the United States or Puerto Rico to be eligible.
+                    </p>
+                </div>
+                <div class="col-3-10 col-mobile-1-1 yes-no-buttons">
+                    <input class="form__radio--hidden form__input--dont-validate-until-submit" type="radio" name="requirement-age" id="requirement-age-yes--{{ formIdentifier }}" value="yes">
+                    <label for="requirement-age-yes--{{ formIdentifier }}" class="btn btn--fit btn--checkbox-label">Yes</label>
+                    <input class="form__radio--hidden form__input--dont-validate-until-submit" type="radio" name="requirement-age" id="requirement-age-no--{{ formIdentifier }}" value="no">
+                    <label for="requirement-age-no--{{ formIdentifier }}" class="btn btn--fit btn--checkbox-label">No</label>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-7-10 col-mobile-1-1">
+                    Do you have commercial health insurance (insurance other than Medicare, Medicaid, etc)?
+                    <p class="form__error" data-error-for="requirement-insurance">
+                        We're sorry. You must have commercial health insurance to be eligible.
+                    </p>
+                </div>
+                <div class="col-3-10 col-mobile-1-1 yes-no-buttons">
+                    <input class="form__radio--hidden form__input--dont-validate-until-submit" type="radio" name="requirement-insurance" id="requirement-insurance-yes--{{ formIdentifier }}" value="yes">
+                    <label for="requirement-insurance-yes--{{ formIdentifier }}" class="btn btn--fit btn--checkbox-label is-active">Yes</label>
+                    <input class="form__radio--hidden form__input--dont-validate-until-submit" type="radio" name="requirement-insurance" id="requirement-insurance-no--{{ formIdentifier }}" value="no">
+                    <label for="requirement-insurance-no--{{ formIdentifier }}" class="btn btn--fit btn--checkbox-label">No</label>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-7-10 col-mobile-1-1">
+                    Is your prescription eligible to be paid in part or full by any government-funded program, including, but not limited to, Medicare, Medicare Part D, Medicaid, Medigap, VA, CHAMPUS, DOD, TRICARE® or any state patient or pharmaceutical assistance program?
+                    <p class="form__error" data-error-for="requirement-payor">
+                        We're sorry. If you are covered by any government-funded program, you are not eligible.
+                    </p>
+                </div>
+                <div class="col-3-10 col-mobile-1-1 yes-no-buttons">
+                    <input class="form__radio--hidden form__input--dont-validate-until-submit" type="radio" name="requirement-payor" id="requirement-payor-yes--{{ formIdentifier }}" value="yes">
+                    <label for="requirement-payor-yes--{{ formIdentifier }}" class="btn btn--fit btn--checkbox-label">Yes</label>
+                    <input class="form__radio--hidden form__input--dont-validate-until-submit" type="radio" name="requirement-payor" id="requirement-payor-no--{{ formIdentifier }}" value="no">
+                    <label for="requirement-payor-no--{{ formIdentifier }}" class="btn btn--fit btn--checkbox-label is-active">No</label>
+                </div>
+            </div>
+{% endmacro %}

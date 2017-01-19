@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Isolation_Mode" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 1026 1026" style="enable-background:new 0 0 1026 1026;" xml:space="preserve">
+	<circle fill="currentColor" cx="513" cy="507" r="382"/>
+	<g fill="#FFFFFF">
+		<circle class="st1" cx="411.5" cy="389.5" r="50.5"/>
+		<circle class="st1" cx="599.5" cy="389.5" r="50.5"/>
+	</g>
+	<path stroke="white" stroke-width="60" fill="none" stroke-linecap="round" d="M645,705c-28-51.1-82-82.7-140-82c-56.6,0.7-108.7,32.1-136,82"/>
+</svg>

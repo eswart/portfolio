@@ -1,0 +1,37 @@
+{#
+
+    A macro for inserting a responsive SVG.  For Trulicity most of these are graphs
+    which is why it is named as such.  You must manually calculate the bottom padding
+    so that it will be sized correctly.  You do this by referring to the viewbox attribute
+    for the svg which should look something like this:
+
+    viewBox="0 0 503.2 223.5"
+
+    You divide the last number or height by the second to last number or width and then
+    multiply by 100 like so:
+
+    width / height * 100
+
+    The result is what you should set the bottom padding to.  It is usually better to round up
+    as this just leaves some extra padding at the bottom instead of clipping the svg.
+
+    graph()
+    @string   id              required      the name of the svg file that you placed in the
+                                            app/assets/svgs/graphs folder.
+    @number   bottomPadding   required      the bottom padding that should be used to size the svg
+                                            appropriately.  Must be calculated from the viewbox
+                                            of the svg as described above.
+    @string   class           optional      The name of the class you would like to add to the
+                                            svg element.
+    @string   alt             optional      A description of the SVG that is visible to screen readers
+
+#}
+
+{% macro graph(class="", alt="", id="", bottomPadding="") %}
+<div class="svg__responsive-wrapper {{ class }}" style="padding-bottom: {{ bottomPadding }}%;">
+    <svg role="img" class="svg--responsive img--full-width">
+        <title>{{ alt }}</title>
+        <use xlink:href="/assets/images/graphs.svg#{{id}}"/>
+    </svg>
+</div>
+{% endmacro %}

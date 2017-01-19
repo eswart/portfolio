@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    //font-family: $fontFamilyRegular;
+    font-family: $fontFamilyRegular;
     line-height: 1.3;
 
     // Makes fonts render nice and clean, basically forces the browser to anti-alias the text
@@ -22,6 +22,8 @@ body {
     // Set the base font size here, Use ems everywhere else.
     font-size: #{$base-font-size}px;
     color: color(text-gray);
+
+
 }
 
 // remove rounded inputs in ios

@@ -1,3 +1,9 @@
+# Website Boilerplate
+
+This project is meant to help you get going quickly building a new website.  It comes
+with a basic build process.  Using this boilerplate will help you follow the best
+practices followed by developers at GSW.
+
 ## Installation
 
 This starter kit utilizes a gulp based build system.  To install this you will
@@ -188,5 +194,4 @@ To help you do this quickly and easily the boilerplate contains a `symbol` macro
 Just be sure you import the symbol macro at the top of your file.
 
 As an FYI, in order to use this method cross browser you need [svg4everybody](https://github.com/jonathantneal/svg4everybody) to be loaded on the page.  This polyfills the `<use>` method when needed and makes sure everything works.
-
 

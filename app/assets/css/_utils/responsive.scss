@@ -1,0 +1,35 @@
+.mobile-only {
+    @include mq($from: tablet) {
+        display: none;
+    }
+}
+.mobile-hide {
+    @include mq($until: tablet) {
+        display: none;
+    }
+}
+.mobile-lg-only {
+    @include mq($from: mobile-lg) {
+        display: none;
+    }
+}
+.mobile-sm-only {
+    @include mq($from: mobile) {
+        display: none;
+    }
+}
+
+.tablet-only {
+    @include mq($until: tablet) {
+        display: none;
+    }
+
+    @include mq($from: desktop) {
+        display: none;
+    }
+}
+.tablet-hide {
+    @include mq($from: tablet, $until: desktop) {
+        display: none;
+    }
+}
