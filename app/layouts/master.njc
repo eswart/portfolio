@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {# Metadata #}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+
+    {# Icons #}
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    {# Supplied SEO #}
+    <title>{{ page_title }}</title>
+    <meta name="title" content="{{ page_title }}"/>
+    <meta name="description" content="{{ page_description }}"/>
+    <meta name="keywords" content="{{ page_keywords }}"/>
+    <meta name="robots" content="noarchive,nocache"/>
+    <meta name="googlebot" content="noarchive"/>
+    <meta name="google-site-verification" content="7gc69WAUcd0eZJuoV5gf464X32pLexBB7dVjUWotB3M">
+    <meta name="msvalidate.01" content="415B200AD3E3B9689BC885965B8C7AF5">
+
+    {# Main Stylesheet: normalize and all site styles #}
+    <link rel="stylesheet" href="/assets/css/main.min.css">
+
+    {# Page specific CSS #}
+    {% for css in css_files %}
+    <link rel="stylesheet" href="{{ css.path }}">
+    {% endfor %}
+
+</head>
+<body id="body" class="{= page_classes =}">
+
+    {# Header content #}
+    <header>
+        {% include "partials/header.njc" %}
+    </header>
+
+    {# Main Content output #}
+    {% block content_block %}
+    {% endblock content_block %}
+
+    {# Footer content #}
+    <footer>
+        {% include "partials/footer.njc" %}
+    </footer>
+
+    {# Javascrit Includes #}
+    <script type="text/javascript" src="/assets/js/main.min.js"></script>
+
+    {# Page specific Javascript #}
+    {% for script in js_files %}
+    <script src="{{ script.path }}"></script>
+    {% endfor %}
+
+</body>
+</html>
