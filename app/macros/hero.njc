@@ -1,0 +1,21 @@
+{#
+
+    This is a macro for setting the hero section at the top of the page.  If adding a new hero
+    the appropriate modifier class must be added to the hero.scss file.
+
+#}
+
+{% macro hero(background="", headline="", sub_headline="") %}
+<div class="hero hero--{{ background }}">
+    <div class="hero__background-wrapper">
+        <div class="grid hero__headline-wrapper">
+            <div class="hero__headline">
+                <h1 class="hero__headline-header">{{ headline }}</h1>
+                {% if sub_headline %}
+                    <p class="hero__headline-sub-header">{{ sub_headline }}</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endmacro %}

@@ -1,0 +1,19 @@
+{% from "macros/symbol.njc" import symbol %}
+
+{% macro pageNav(items = []) %}
+<div class="page-nav">
+    <div class="page-nav__spacer"></div>
+    <ul class="page-nav__list">
+        {% for item in items %}
+            <li class="page-nav__item">
+                <a class="page-nav__item-link js--scroll-to-link" href="#{{ item.href }}">
+                    <span class="page-nav__item-text">
+                        {{ symbol(id = 'circle-arrow', class = 'page-nav__arrow', alt = 'Expand') }}
+                        {{ item.title }}
+                    </span>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endmacro %}

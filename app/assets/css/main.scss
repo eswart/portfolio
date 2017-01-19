@@ -27,21 +27,27 @@
 @import 'variables';
 @import 'colors';
 
+
 // Third Party Utils
-	//@import "mq-config";
+@import "mq-config";
 @import "node_modules/sass-mq/mq";
 @import "custom";
 @import "node_modules/bootstrap/scss/bootstrap-grid";
 @import "node_modules/bootstrap/scss/bootstrap";
 
+
 // Global
-	//@import 'fonts';
+@import 'fonts';
 @import "base_normalize";
 @import 'global';
 
 // Utils
-	//@import "_utils/grid";
+@import "_utils/grid";
 
 // Components
+@import "_utils/responsive";
+@import "_utils/align";
+@import "_utils/float";
 
 // Pages
+

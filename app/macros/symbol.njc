@@ -1,0 +1,34 @@
+{#
+
+    A macro for inserting an SVG into a page.  SVGs that you want to add in this way should be
+    placed into the app/assets/svgs/symbols directory.  From there they will be minified and
+    combined into a symbols.svg file that will be put in the images directory.  They can then
+    be inserted into the page using their ID which is the same as their file name.
+
+    This method ends up being essentially a sprite sheet for svgs that look great at every
+    screen resolution.
+
+    symbol()
+    @string   id              required      the name of the svg file that you placed in the
+                                            app/assets/svgs/graphs folder.
+    @string   class           optional      The name of the class you would like to add to the
+                                            svg element.
+    @string   alt             optional      A description of the SVG that is visible to screen readers
+
+#}
+
+{% macro symbol(class="", alt="", id="") %}
+<svg role="img" class="svg {{ class }}">
+    <title>{{ alt }}</title>
+    <use xlink:href="/assets/images/symbols.svg#{{ id }}"/>
+</svg>
+{% endmacro %}
+
+{% macro symbolResponsive(class="", alt="", id="", bottomPadding="") %}
+<div class="svg__responsive-wrapper {{ class }}" style="padding-bottom: {{ bottomPadding }}%;">
+    <svg role="img" class="svg--responsive img--full-width">
+        <title>{{ alt }}</title>
+        <use xlink:href="/assets/images/symbols.svg#{{id}}"/>
+    </svg>
+</div>
+{% endmacro %}

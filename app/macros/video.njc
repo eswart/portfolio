@@ -1,0 +1,57 @@
+{#
+
+    This is a macro for setting the hero section at the top of the page.  If adding a new hero
+    the appropriate modifier class must be added to the hero.scss file.
+
+#}
+
+{% macro video(playerID="", entryID="") %}
+<div class="video video--16-9">
+    <script src="https://cdnapisec.kaltura.com/p/1759891/sp/175989100/embedIframeJs/uiconf_id/30232671/partner_id/1759891"></script>
+    <div id="kaltura_player_{{ playerID }}" class="kWidgetIframeContainer video__player" style="overflow: hidden; background: url(https://cfvod.kaltura.com/p/1759891/sp/175989100/thumbnail/entry_id/{{ entryID }}/version/100001/acv/211/width/875/height/492);">
+        <iframe id="kaltura_player_{{ playerID }}_ifp" scrolling="no" name="kaltura_player_{{ playerID }}_ifp" class="mwEmbedKalturaIframe" aria-labelledby="Player kaltura_player_{{ playerID }}" aria-describedby="The Kaltura Dynamic Video Player" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" style="border: 0px; max-width: 100%; max-height: 100%; width: 100%; height: 100%;"></iframe>
+    </div>
+    <script type="text/javascript">
+        kWidget.embed({
+            targetId: "kaltura_player_{{ playerID }}",
+            wid: "_1759891",
+            uiconf_id: 30232671,
+            flashvars: {
+                streamerType: "auto",
+                "EmbedPlayer.EnableIpadNativeFullscreen" : true,
+                "EmbedPlayer.EnableIpadHTMLControls" : false,
+            },
+            cache_st: {{ playerID }},
+            entry_id: "{{ entryID }}",
+            readyCallback: function(t) {
+                var i = document.getElementById(t);
+                i.kBind("firstPlay", function() {
+                    // first play
+                });
+                i.kBind("firstQuartile", function() {
+                    // first quartile
+                });
+                i.kBind("secondQuartile", function() {
+                    // second quartile
+                });
+                i.kBind("thirdQuartile", function() {
+                    // third quartile
+                });
+                i.kBind("playerPlayEnd", function() {
+                    // player end
+                });
+                i.kBind("playerUpdatePlayhead", function(t) {
+                    // player playahead
+                });
+                i.kBind("openFullScreen", function() {
+                    // open full screen
+                });
+                // Without this, seeking on an ipad will result in a play button overlaying the video
+                i.kBind('seeked', function(){
+                    i.sendNotification('doPlay');
+                })
+            }
+        });
+    </script>
+</div>
+{% endmacro %}
