@@ -7,7 +7,7 @@
 {% set page_keywords = 'Meta Keywords goes here' %}
 
 {% block content_block %}
-<p>Content</p>
+<p>Content 3</p>
 {% endblock content_block %}
 
 {% set js_files = [{ path: "test1.js", id: 1 }, { path: "test2.js", id: 2}] %}
